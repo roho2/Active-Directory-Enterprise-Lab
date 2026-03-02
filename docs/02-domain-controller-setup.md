@@ -23,7 +23,7 @@ The goal of this lab is to:
 
 ## Why This Matters
 
-Active Directory is foundational in enterprise environments.  
+Active Directory is a foundational skill in many enterprise environments. 
 Understanding how to deploy and configure a Domain Controller is critical for:
 
 - Network Administration roles
@@ -64,6 +64,7 @@ Before installing Active Directory, configure a static IP address.
 
 **Why?**  
 Domain Controllers must not rely on DHCP for addressing.
+This is because the active directory members rely on the Domain Controller to be in a reliable, known location.
 
 Settings used:
 
@@ -134,7 +135,7 @@ Open:
 Confirm:
 
 - Domain appears correctly
-- DNS forward lookup zone created
+- DNS forward lookup zone is created
 - SYSVOL and NETLOGON shares exist
 
 Run in PowerShell:
@@ -143,7 +144,7 @@ Run in PowerShell:
 dcdiag
 ```
 
-Confirm there are no critical errors.
+Confirm there are no critical errors in the output.
 
 ---
 
@@ -158,7 +159,7 @@ Confirm there are no critical errors.
 
 2. Join domain:
 ```Code
-lab.local
+lab.rjhollinger.com
 ```
 
 3. Reboot client
@@ -189,7 +190,7 @@ lab.local
 This document walked through:
 - Installing AD DS
 - Promoting a server to a Domain Controller
-- Configuring DNS
+- Configuring DNS on the Domain Controller
 - Validating domain functionality
 - Testing client authentication
 
