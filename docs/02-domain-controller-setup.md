@@ -172,3 +172,25 @@ lab.local
 ---
 
 ## Security Considerations
+- Disable unused services
+- Rename default Administrator account (optional lab hardening)
+- Configure basic Group Policy
+- Ensure firewall is properly configured
+- Avoid exposing DC to internet
+
+## Future Improvements
+- Add secondary Domain Controller
+- Implement DHCP role on separate server
+- Configure Organizational Units properly
+- Implement Group Policy baselines
+- Simulate privilege escalation scenarios for SOC testing
+
+## Summary
+This document walked through:
+- Installing AD DS
+- Promoting a server to a Domain Controller
+- Configuring DNS
+- Validating domain functionality
+- Testing client authentication
+
+This lab simulates a real-world enterprise identity environment and builds foundational knowledge required for Network Administration and Cybersecurity roles.
