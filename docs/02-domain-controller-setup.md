@@ -150,3 +150,25 @@ Confirm there are no critical errors.
 ## Testing Domain Functionality
 
 ### Test 1 - Join a Client Machine
+
+1. Set client DNS to:
+```Code
+192.168.1.10
+```
+
+2. Join domain:
+```Code
+lab.local
+```
+
+3. Reboot client
+4. Login with domain credentials
+
+### Test 2 - Create Test User
+- Create user in ADUC
+- Add to appropriate OU
+- Test login from client
+
+---
+
+## Security Considerations
