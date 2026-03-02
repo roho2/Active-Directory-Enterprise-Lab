@@ -7,7 +7,7 @@
 
 ---
 
-## 📌 Overview
+## Overview
 
 This document outlines the full process of deploying and configuring a Windows Server machine as an Active Directory Domain Controller in a home lab environment.
 
@@ -141,3 +141,12 @@ Run in PowerShell:
 
 ```powershell
 dcdiag
+```
+
+Confirm there are no critical errors.
+
+---
+
+## Testing Domain Functionality
+
+### Test 1 - Join a Client Machine
